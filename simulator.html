@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transaction Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Bank Transaction Simulator</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="simulator.html">Simulator</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+
+<section class="box">
+
+<h2>Secure Banking Transaction</h2>
+
+<input type="number" id="sender" placeholder="Sender Account">
+
+<input type="number" id="receiver" placeholder="Receiver Account">
+
+<input type="number" id="amount" placeholder="Amount">
+
+<br><br>
+
+<button onclick="generateKeys()">1. Generate Keys</button>
+
+<button onclick="encryptTransaction()">2. Encrypt Transaction</button>
+
+<button onclick="decryptTransaction()">3. Decrypt Transaction</button>
+
+<br><br>
+
+<div id="output"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
